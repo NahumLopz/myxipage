@@ -1,0 +1,364 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:opsz,wght@9..40,200&family=Kantumruy+Pro:wght@200;300&family=Poiret+One&display=swap');
+</style>
+*/
+/* 
+    Created on : 11 oct 2023, 18:57:28
+    Author     : danim
+*/
+
+  .animated-text {
+            font-size: 100px;
+            font-weight: bold;
+            color: transparent;
+            background-image: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #e67e22);
+            background-size: 200% 200%;
+            animation: gradientAnimation 3s linear infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        
+
+
+        
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            animation: background-animation 10s ease-in-out infinite;
+            background-size: 600% 600%;
+            background-color: black;
+        }
+
+       
+ 
+.animated-text-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    text-align: center;
+
+}
+
+.animated-text {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.nosotros {
+    padding-left: 0%;
+    display: grid;
+    color: rgb(177, 174, 174);
+    text-align: center;
+    margin-top: 89vh; 
+    width: 100%;
+    height: 100%;
+    background-size: 400% 400%;
+
+}
+
+
+
+.eqtrab {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100vh; 
+}
+
+
+.navbar {
+    background-color: #3498db; 
+    height: 80px; 
+    padding: 30px 20px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: white;
+}
+.navbar a:hover {
+  color: #ff9900;}
+
+.mision{
+     padding-right: 100px;
+    text-align: left;
+    font-stretch: extra-condensed;
+    padding-left: 100px;
+    font-size: 100px;   
+    align-items: center;
+    padding-left: 100px;
+    background-color: rgb(0, 0, 0) ;
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.tmision{
+    text-align: left;
+    padding-right: 50px;
+    text-align: justify;
+    font-size: 30px;
+    
+  padding-bottom: 200px;
+  color: #ffffff;
+  
+}
+
+@keyframes desplazamiento-horizontal {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.tmision {
+  animation: desplazamiento-horizontal 2s ease-in-out;
+  animation-iteration-count: 2;
+}
+
+
+
+.nosotros{
+    font-stretch: extra-condensed;
+    font-size: 100px;
+    align-items: center;
+    
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.tnosotros{
+    text-align: center;
+    padding-left: 50px;
+    font-size: 30px;
+    padding-right: 100px;
+  padding-bottom: 200px;
+      align-items: center;
+
+}
+
+
+
+.vision{
+    text-align: center;
+    font-stretch: extra-condensed;
+    font-size: 100px;
+    align-items: center;
+    padding-left: 100px;
+    background-color: rgb(255, 255, 255) ;
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.tvision{
+    text-align: center;
+    padding-left: 100px;
+    font-size: 30px;
+    padding-right: 100px;
+  padding-bottom: 200px;
+  text-align: justify
+
+}
+
+
+
+.estrategias{
+     text-align: left;
+    font-stretch: extra-condensed;
+    font-size: 100px;
+    align-items: center;
+    padding-left: 100px;
+    background-color: rgb(0, 0, 0) ;
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.testrategias{
+      text-align: left;
+    padding-right: 50px;
+    text-align: justify;
+    font-size: 30px;
+    
+  padding-bottom: 200px;
+  color: #ffffff;
+  
+
+}
+
+.politicas{
+    font-stretch: extra-condensed;
+    font-size: 100px;
+    align-items: center;
+    padding-left: 100px;
+    background-color: rgb(255, 255, 255) ;
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.tpoliticas{
+      text-align: center;
+    padding-left: 100px;
+    font-size: 30px;
+    padding-right: 100px;
+  padding-bottom: 200px;
+  text-align: justify
+
+}
+
+
+
+
+
+
+
+
+
+.valores{
+    text-align: left;
+    font-stretch: extra-condensed;
+    font-size: 100px;
+    align-items: center;
+    padding-left: 100px;
+    background-color: rgb(0, 0, 0) ;
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.tvalores{
+ text-align: left;
+    padding-right: 50px;
+    text-align: justify;
+    font-size: 30px;
+    
+  padding-bottom: 200px;
+  color: #ffffff;
+
+}
+
+.foda{
+    text-align: center;
+    font-stretch: extra-condensed;
+    font-size: 100px;
+    align-items: center;
+    padding-left: 100px;
+    background-color: rgb(255, 255, 255) ;
+}
+
+    @keyframes cambio-color-letras {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
+    .animar-letras {
+        animation: cambio-color-letras 5s infinite; /* Aplicar la animación */
+    }
+    
+
+.tfoda{
+    text-align: center;
+    padding-left: 100px;
+    font-size: 30px;
+    padding-right: 100px;
+  padding-bottom: 200px;
+  text-align: justify
+
+}
+
